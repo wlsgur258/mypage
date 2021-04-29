@@ -2,3 +2,299 @@
 
 
 메인 인덱스로 한게 왜 안바뀜?
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메인화면_1</title>
+<style type="text/css">
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+header {
+    height:100px;
+    box-shadow: 0px 8px 15px gray;
+    background-color:#FF8224;
+    position: relative;
+    z-index: 100;
+    
+}
+
+header h1 {
+    float: left;
+    margin-top: 0px;
+    margin-right: 30px;
+}
+
+#gnb {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+#gnb a {
+    font-size: 0.8em;
+    color: #666;
+}
+
+#gnb a:hover {
+    text-decoration: underline;
+}
+
+#gnb a::after {
+    content: "|";
+    margin-left: 8px;
+}
+
+#gnb a:last-of-type::after {
+    content: none;
+}
+
+#nav{
+	float:left;
+	list-style: none;
+	height:0px;
+	width:480px;
+	text-align: center;
+	margin-top: 20px;
+    margin-right: 20px;
+    background-color:gray;
+}
+
+#nav li {
+	float:left;
+	width:120px;
+	height:50px;
+	position:relative;
+	line-height:50px;
+}
+
+#nav li {
+	display: block;
+	background-color:black;
+	font-weight : bold;
+}
+
+#nav li:hover{
+	display:block;
+	background-color:gray;
+}
+
+#nav ul {
+	list-style:none;
+	position:absolute;
+	display:none;
+}
+
+#nav li:hover ul{
+	display:block;
+}
+
+#nav li ul li{
+	width:120px;
+	right:0px;
+	display:block;
+}
+
+.nav_2{
+	text-decoration: none;
+	display: block;
+	color:#BA602B;
+}
+
+.nav_2:hover{
+	color:hotpink;
+}
+
+.cen img {
+float:left;
+width:120px;
+height:70px;
+margin: 10px 35px 0px 35px;
+}
+
+body {
+margin:0px;
+}
+
+.back{
+background:url("c:food_image/food_main_3.jpg");
+background-size:cover;
+height:500px;
+width:100%;
+float:left;
+background-color:gray;
+}
+
+
+.back{
+color:white;
+}
+
+
+
+.topMenu{
+width : 200px;
+height: 200px;
+/*background-color:#ff42e7;*/
+border-color : black;
+}
+
+
+.topMenu:hover{
+background-color: #666;
+color:#ff42e7;
+}
+
+#logo{
+width:200px;
+height:100px;
+}
+table{
+background-color : gray
+}
+
+.topMenu{
+background-color : white;
+}
+
+
+footer {
+    background-color: #FFFF8F;
+    border-top: 1px solid #eee;
+    font-size: 0.8em;
+    padding: 20px 15px 20px 15px;
+    margin-top: 25px;
+    overflow: auto;
+}
+ footer>.cen>div {
+        float: none;
+    }
+    
+    footer>.cen>img {
+        float: none;
+        display: block;
+        margin: auto;
+        margin-top: 1em;
+    }
+    .cen {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+#footimage{
+width:140px;
+height:100px;
+border-width : 10px;
+border-color : black;
+
+}
+footer .cen div {
+    float: left;
+    }
+
+</style>
+</head>
+<body>
+<header>
+            <div class="cen">
+                <h1>
+                    <a href="#">
+                        <img src="c:food_image/food_logo.jpg" alt="logo" />
+                    </a>
+                </h1>
+                
+                
+                <div>
+		<ul id="nav">
+			<li><a class="nav_2" href="#">메뉴</a>
+				<ul>
+					<li><a class="nav_2" href="메뉴판_1.html">버거</a></li>
+					<li><a class="nav_2" href="메뉴판_1.html">음료수</a></li>
+					<li><a class="nav_2" href="메뉴판_1.html">사이드메뉴</a></li>
+				</ul>
+			</li>
+			<li><a class="nav_2" href="#">매장찾기</a>
+				<ul>
+					<li><a class="nav_2" href="#">하위메뉴1</a></li>
+					<li><a class="nav_2" href="#">하위메뉴2</a></li>
+				</ul>
+			</li>
+			<li><a class="nav_2" href="#">공지사항</a>
+				<ul>
+					<li><a class="nav_2" href="#">하위메뉴1</a></li>
+					<li><a class="nav_2" href="#">하위메뉴2</a></li>
+				</ul>
+			</li>
+			<li><a class="nav_2" href="#">회사소개</a>
+				<ul>
+					<li><a class="nav_2" href="#">하위메뉴1</a></li>
+					<li><a class="nav_2" href="#">하위메뉴2</a></li>
+				</ul>
+			</li>
+		</ul>
+</div>
+                
+                
+                
+                
+                <div id="gnb">
+                    <a href="회원가입창_1.html">로그인</a>
+                    <a href="회원가입창_1.html">회원가입</a>
+                    <a href="회원가입창_1.html">주문/배송</a>
+                </div>
+            </div>
+        </header>
+<div id = 'mainimage'>
+<h1 class="back"><p>&nbsp;&nbsp;&nbsp;정성가득한 수제버거<br>&nbsp;&nbsp;&nbsp;버거피아</p></h1>
+</div>
+
+<div>
+<table align=center border=1 cellSpacing=20 cellPadding=10 borderColor=white>
+<tr align=center>
+	<td class="topMenu">
+		<a href="메뉴판_1.html"><img id = "logo" src = "C:\food_image/food_b_1.jpg">
+		<h3>정성가득한 쉐프특선 수제버거</h3>
+		<p>메뉴 보러가기 ▶</p></a>
+	</td>
+	
+	<td class="topMenu">
+		<a href="메뉴판_1.html"><img id = "logo" src = "C:\food_image/food_d_1.jpg">
+		<h3>황금배율로 만들어진 상큼한 드링크</h3>
+		<p>메뉴 보러가기 ▶</p></a>
+		</td>
+		
+	<td class="topMenu">
+		<a href="메뉴판_1.html"><img id = "logo" src = "C:\food_image/food_s_1.jpg">
+		<h3>마지막까지 만족스러운 사이드메뉴</h3>
+		<p>메뉴 보러가기 ▶</p></a>
+	</td>
+</tr>
+</table>
+</div>
+
+<footer>
+            <div class="cen">
+                <div>
+                    <p>
+                    
+                        <a href="#">개인정보처리방침</a> |
+                        <a href="#">전자금융거래 이용약관</a> |
+                        <a href="#">이용약관</a>
+                    </p>
+                    <p>
+                        대전광역시 유성구 구암동 500-21 | 고객지원 (평일 9시-18시) : 국내고객 042-252-5963 <br/>
+                        사업자등록번호 123-12-12345 | 통신판매신고번호 2020-대전-1234 | 대표자 : 버거왕 <br/>
+                        Copyrights &copy; BurgerPia Inc. All rights reserved.
+                    </p>
+                </div>
+                <img id="footimage" src="c:food_image/food_logo.jpg" alt="logo">
+                
+            </div>
+        </footer>
+
+</body>
+</html>
