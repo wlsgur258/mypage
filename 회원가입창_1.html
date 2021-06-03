@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입창_1</title>
+<style type="text/css">
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+header {
+    height:100px;
+    box-shadow: 0px 8px 15px gray;
+    background-color:#FF8224;
+    position: relative;
+    z-index: 100;
+    
+}
+
+header h1 {
+    float: left;
+    margin-top: 0px;
+    margin-right: 30px;
+}
+
+#gnb {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+#gnb a {
+    font-size: 0.8em;
+    color: #666;
+}
+
+#gnb a:hover {
+    text-decoration: underline;
+}
+
+#gnb a::after {
+    content: "|";
+    margin-left: 8px;
+}
+
+#gnb a:last-of-type::after {
+    content: none;
+}
+
+#nav{
+	float:left;
+	list-style: none;
+	height:0px;
+	width:480px;
+	text-align: center;
+	margin-top: 20px;
+    margin-right: 20px;
+    background-color:gray;
+}
+
+#nav li {
+	float:left;
+	width:120px;
+	height:50px;
+	position:relative;
+	line-height:50px;
+}
+
+#nav li {
+	display: block;
+	background-color:black;
+	font-weight : bold;
+}
+
+#nav li:hover{
+	display:block;
+	background-color:gray;
+}
+
+#nav ul {
+	list-style:none;
+	position:absolute;
+	display:none;
+}
+
+#nav li:hover ul{
+	display:block;
+}
+
+#nav li ul li{
+	width:120px;
+	right:0px;
+	display:block;
+}
+
+.nav_2{
+	text-decoration: none;
+	display: block;
+	color:#BA602B;
+}
+
+.nav_2:hover{
+	color:hotpink;
+}
+
+.cen img {
+float:left;
+width:120px;
+height:70px;
+margin: 10px 35px 0px 35px;
+}
+
+body {
+margin:0px;
+}
+
+
+
+
+footer {
+    background-color: #FFFF8F;
+    border-top: 1px solid #eee;
+    font-size: 0.8em;
+    padding: 20px 15px 20px 15px;
+    margin-top: 25px;
+    overflow: auto;
+}
+ footer>.cen>div {
+        float: none;
+    }
+    
+    footer>.cen>img {
+        float: none;
+        display: block;
+        margin: auto;
+        margin-top: 1em;
+    }
+    .cen {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+#footimage{
+width:140px;
+height:100px;
+border-width : 10px;
+border-color : black;
+
+}
+footer .cen div {
+    float: left;
+    }
+
+#login{
+}
+
+#logintable{
+color:black;
+border-width : 10px;
+border-color : gray;
+}
+
+#logintable{
+background-color:yellow;
+}
+
+#button input{
+	width: 80px;
+	height: 50px;
+	margin: 0px 10px 0px 10px;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+            <div class="cen">
+                <h1>
+                    <a href="메인화면_1.html">
+                        <img src="c:food_image/food_logo.jpg" alt="logo" />
+                    </a>
+                </h1>
+                
+                
+                <div>
+		<ul id="nav">
+			<li><a class="nav_2" href="#">메뉴</a>
+				<ul>
+					<li><a class="nav_2" href="메뉴판_1.html">버거</a></li>
+					<li><a class="nav_2" href="메뉴판_1.html">음료수</a></li>
+					<li><a class="nav_2" href="메뉴판_1.html">사이드메뉴</a></li>
+				</ul>
+			</li>
+			<li><a class="nav_2" href="#">매장찾기</a>
+				<ul>
+					<li><a class="nav_2" href="#">하위메뉴1</a></li>
+					<li><a class="nav_2" href="#">하위메뉴2</a></li>
+				</ul>
+			</li>
+			<li><a class="nav_2" href="#">공지사항</a>
+				<ul>
+					<li><a class="nav_2" href="#">하위메뉴1</a></li>
+					<li><a class="nav_2" href="#">하위메뉴2</a></li>
+				</ul>
+			</li>
+			<li><a class="nav_2" href="#">회사소개</a>
+				<ul>
+					<li><a class="nav_2" href="#">하위메뉴1</a></li>
+					<li><a class="nav_2" href="#">하위메뉴2</a></li>
+				</ul>
+			</li>
+		</ul>
+</div>
+                
+                
+                
+                
+                <div id="gnb">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">주문/배송</a>
+                </div>
+            </div>
+        </header>
+
+<section id='login' >
+            
+			<div align=center  >
+				<h1>회원 로그인</h1>
+				<h5>회원이 되어 제품이벤트 정보를 가장 먼저 받아보세요<h5>
+			</div>
+			
+			<div>
+				<form>
+					<table id='logintable' align=center 
+					border=0 cellSpacing=20 cellPadding=10 borderColor=white>
+						<tr>
+							<td>아이디</td>
+							<td><input type="text" name="userid" placeholder="aaa@naver.com"></td>
+						</tr>
+						<tr>
+							<td>비밀번호</td>
+							<td><input type="password" name="userpw" placeholder="..."></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="checkbox" name="saveid">
+								아이디 기억하기
+							</td>
+						</tr>
+						<tr>
+							<td id='button' colspan="2">
+								<input type="reset">
+								<input type="submit">
+								<input type="button" value=회원가입>
+							</td>
+						
+						</tr>
+					</table>
+				</form>
+			</div>
+            
+        </section>
+
+<footer>
+            <div class="cen">
+                <div>
+                    <p>
+                    
+                        <a href="#">개인정보처리방침</a> |
+                        <a href="#">전자금융거래 이용약관</a> |
+                        <a href="#">이용약관</a>
+                    </p>
+                    <p>
+                        대전광역시 유성구 구암동 500-21 | 고객지원 (평일 9시-18시) : 국내고객 042-252-5963 <br/>
+                        사업자등록번호 123-12-12345 | 통신판매신고번호 2020-대전-1234 | 대표자 : 버거왕 <br/>
+                        Copyrights &copy; BurgerPia Inc. All rights reserved.
+                    </p>
+                </div>
+                <img id="footimage" src="c:food_image/food_logo.jpg" alt="logo">
+                
+            </div>
+        </footer>
+
+</body>
+</html>
